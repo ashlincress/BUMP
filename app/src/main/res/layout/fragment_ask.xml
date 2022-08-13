@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bump_bground"
+    tools:context=".AskFragment">
+
+    <EditText
+        android:id="@+id/editquery"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="40dp"
+        android:hint="Ask me?"
+        android:textColorHint="@color/white"
+        android:textSize="20dp"
+        android:textStyle="normal"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/btnpostquery"
+        android:layout_width="137dp"
+        android:layout_height="66dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="300dp"
+        android:text="Post"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/black"/>
+
+</FrameLayout>
