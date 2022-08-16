@@ -29,7 +29,7 @@
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:id="@+id/frameLayout"
-            android:layout_below="@+id/topAppbar"
+
             android:layout_marginTop="50dp"
             />
 

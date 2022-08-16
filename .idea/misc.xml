@@ -4,6 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/AshlinCress/AndroidStudioProjects/BUMP2/app/src/main/res/drawable/input_bg.xml" value="0.188" />
+        <entry key="..\:/Users/AshlinCress/AndroidStudioProjects/BUMP2/app/src/main/res/drawable/model4.xml" value="0.1965" />
+        <entry key="..\:/Users/AshlinCress/AndroidStudioProjects/BUMP2/app/src/main/res/layout/activity_gyno_main_page.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/AshlinCress/AndroidStudioProjects/BUMP2/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/AshlinCress/AndroidStudioProjects/BUMP2/app/src/main/res/layout/activity_register.xml" value="0.264" />
         <entry key="..\:/Users/AshlinCress/AndroidStudioProjects/BUMP2/app/src/main/res/layout/activity_second.xml" value="0.358695652173913" />
@@ -16,14 +18,23 @@
         <entry key="..\:/Users/AshlinCress/AndroidStudioProjects/BUMP2/app/src/main/res/layout/fragment_gynecologist2.xml" value="0.25181159420289856" />
         <entry key="..\:/Users/AshlinCress/AndroidStudioProjects/BUMP2/app/src/main/res/layout/fragment_gyno2.xml" value="0.264" />
         <entry key="..\:/Users/AshlinCress/AndroidStudioProjects/BUMP2/app/src/main/res/layout/fragment_gyno_frgment2.xml" value="0.25181159420289856" />
+        <entry key="..\:/Users/AshlinCress/AndroidStudioProjects/BUMP2/app/src/main/res/layout/fragment_gyno_notification.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/AshlinCress/AndroidStudioProjects/BUMP2/app/src/main/res/layout/fragment_gyno_queries.xml" value="0.2682291666666667" />
+        <entry key="..\:/Users/AshlinCress/AndroidStudioProjects/BUMP2/app/src/main/res/layout/fragment_gyno_solve_queries.xml" value="0.18854166666666666" />
+        <entry key="..\:/Users/AshlinCress/AndroidStudioProjects/BUMP2/app/src/main/res/layout/fragment_gyno_solve_queries2.xml" value="0.17447916666666666" />
         <entry key="..\:/Users/AshlinCress/AndroidStudioProjects/BUMP2/app/src/main/res/layout/fragment_reply.xml" value="0.18802083333333333" />
         <entry key="..\:/Users/AshlinCress/AndroidStudioProjects/BUMP2/app/src/main/res/layout/fragment_reply2.xml" value="0.25271739130434784" />
+        <entry key="..\:/Users/AshlinCress/AndroidStudioProjects/BUMP2/app/src/main/res/layout/gynomodel4.xml" value="0.18854166666666666" />
         <entry key="..\:/Users/AshlinCress/AndroidStudioProjects/BUMP2/app/src/main/res/layout/list_item.xml" value="0.358695652173913" />
         <entry key="..\:/Users/AshlinCress/AndroidStudioProjects/BUMP2/app/src/main/res/layout/model.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/AshlinCress/AndroidStudioProjects/BUMP2/app/src/main/res/layout/model2.xml" value="0.25271739130434784" />
         <entry key="..\:/Users/AshlinCress/AndroidStudioProjects/BUMP2/app/src/main/res/layout/model3.xml" value="0.25271739130434784" />
+        <entry key="..\:/Users/AshlinCress/AndroidStudioProjects/BUMP2/app/src/main/res/layout/model4.xml" value="0.1875" />
+        <entry key="..\:/Users/AshlinCress/AndroidStudioProjects/BUMP2/app/src/main/res/layout/model5.xml" value="0.18854166666666666" />
         <entry key="..\:/Users/AshlinCress/AndroidStudioProjects/BUMP2/app/src/main/res/layout/nav_header.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/AshlinCress/AndroidStudioProjects/BUMP2/app/src/main/res/menu/gyno.xml" value="0.18854166666666666" />
         <entry key="..\:/Users/AshlinCress/AndroidStudioProjects/BUMP2/app/src/main/res/menu/second.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/AshlinCress/AndroidStudioProjects/BUMP2/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1965" />
       </map>
     </option>
   </component>
