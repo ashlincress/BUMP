@@ -73,16 +73,16 @@ public class GynoQueriesFragment extends ListFragment {
 //                // TODO Auto-generated method stub
 //
 //
-//
-//                HashMap<String, String> s= data.get(pos);
-//                SecondActivity mn2=(SecondActivity) getActivity();
-//                mn2.f2(s);
+
+                HashMap<String, String> s= data.get(pos);
+                GynoMainPage mn2=(GynoMainPage) getActivity();
+                mn2.f2(s);
 //
 //
 //
 
-        Toast.makeText(getActivity(), data.get(pos).get("Player"), Toast.LENGTH_SHORT).show();
-//
+//        Toast.makeText(getActivity(), data.get(pos).get("Player"), Toast.LENGTH_SHORT).show();
+////
             }
         });
     }

@@ -3,62 +3,92 @@ package com.example.bump;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.ListFragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.SimpleAdapter;
+
+import java.util.ArrayList;
+import java.util.HashMap;
 
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link GynoNotificationFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class GynoNotificationFragment extends Fragment {
+public class GynoNotificationFragment extends ListFragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
+    String[] players={"Dr.Ander Herera","Dr.Diego Costa","Dr.Juan Mata","Dr.David De Gea","Dr.Thibaut Courtouis","Dr.Van Persie","Dr.Oscar"};
+    String[] places={"Mangalore","Mumbai","Goa","Bangalore","Delhi","Mysore","Pune"};
+    String[] phoneNo={"9341394245","9972638046","9900396615","9164462002","8495088892","9278360481","9023786541"};
+    String[] country={"India","India","India","India","India","India","India"};
+    String[] email={"ander@gmail.com","diegocosta@gmail.com","juan@gmail.com","david@gmail.com","thibaut@gmail.com","van@gmail.com","oscar@gmail.com"};
+    int[] images={R.drawable.profile2,R.drawable.profile1,R.drawable.profile4,R.drawable.profile3,R.drawable.profile5,R.drawable.profile6,R.drawable.profile7};
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
-    public GynoNotificationFragment() {
-        // Required empty public constructor
-    }
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment GynoNotificationFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static GynoNotificationFragment newInstance(String param1, String param2) {
-        GynoNotificationFragment fragment = new GynoNotificationFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-    }
+    ArrayList<HashMap<String, String>> data=new ArrayList<HashMap<String,String>>();
+    SimpleAdapter adapter;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_gyno_notification, container, false);
+        // TODO Auto-generated method stub
+
+        //MAP
+        HashMap<String, String> map=new HashMap<String, String>();
+
+        //FILL
+        for(int i=0;i<players.length;i++)
+        {
+            map=new HashMap<String, String>();
+            map.put("Player", players[i]);
+            map.put("Phone",phoneNo[i]);
+//            map.put("Email",email[i]) ;
+            map.put("Place",places[i]);
+//            map.put("Country",country[i]);
+            map.put("Image", Integer.toString(images[i]));
+
+            data.add(map);
+        }
+
+        //KEYS IN MAP
+        String[] from={"Player","Place","Image"};
+
+        //IDS OF VIEWS
+        int[] to={R.id.gyno_nameTxt2,R.id.gyno_placeTxt2,R.id.gyno_imageView2};
+
+        //ADAPTER
+        adapter=new SimpleAdapter(getActivity(), data, R.layout.model5, from, to);
+        setListAdapter(adapter);
+
+        return super.onCreateView(inflater, container, savedInstanceState);
+    }
+
+
+    @Override
+    public void onStart() {
+        // TODO Auto-generated method stub
+        super.onStart();
+
+//        getListView().setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//
+//            @Override
+//            public void onItemClick(AdapterView<?> av, View v, int pos,
+//                                    long id) {
+//                // TODO Auto-generated method stub
+//
+//
+//
+//                HashMap<String, String> s= data.get(pos);
+//                SecondActivity mn1=(SecondActivity) getActivity();
+//                mn1.f1(s);
+//
+//
+////                Toast.makeText(getActivity(), data.get(pos).get("Player"), Toast.LENGTH_SHORT).show();
+//
+//            }
+//        });
     }
 }

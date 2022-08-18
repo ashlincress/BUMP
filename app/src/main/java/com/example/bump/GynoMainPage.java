@@ -1,5 +1,10 @@
 package com.example.bump;
 
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.MenuItem;
+import android.view.View;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
@@ -8,10 +13,6 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.MenuItem;
-import android.view.View;
 
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.navigation.NavigationView;
@@ -49,7 +50,6 @@ public class GynoMainPage extends AppCompatActivity {
                         replaceFragment(new GynoNotificationFragment());
                         break;
                     case R.id.nav_queries:
-
                         replaceFragment(new GynoQueriesFragment());
                         break;
                     case R.id.nav_logout:
@@ -69,14 +69,23 @@ public class GynoMainPage extends AppCompatActivity {
         });
     }
     private void replaceFragment(Fragment fragment){
-//        FragmentManager fragmentManager1=getSupportFragmentManager();
-//        FragmentTransaction fragmentTransaction=fragmentManager1.beginTransaction();
-//        fragmentTransaction.replace(R.id.frameLayout,fragment);
-//        fragmentTransaction.commit();
+        FragmentManager fragmentManager1=getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction=fragmentManager1.beginTransaction();
+        fragmentTransaction.replace(R.id.gynoframeLayout,fragment);
+        fragmentTransaction.commit();
     }
 
 
+    public void f2(HashMap<String, String> s) {
+        FragmentManager gynomanager=getSupportFragmentManager();
+        FragmentTransaction gynot2=gynomanager.beginTransaction();
+        GynoQueries2Fragment m33=new GynoQueries2Fragment();
+        Bundle b3=new Bundle();
+        int i;
+        b3.putString("s",String.valueOf(s));
+        m33.setArguments(b3);
+        gynot2.replace(R.id.gynoframeLayout,m33);
+        gynot2.commit();
 
-
-
+    }
 }
