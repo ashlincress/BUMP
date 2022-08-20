@@ -54,16 +54,13 @@
             android:orientation="vertical"
             android:layout_marginStart="35dp">
 
-
-            <MultiAutoCompleteTextView
-                android:id="@+id/reply_profile"
-                android:layout_width="300dp"
-                android:layout_height="200dp"
-                android:hint="Reply here"
-                android:textSize="20dp"
-
-
-                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/gynosreply"
+                android:text="Will let you know soon"
+                android:textStyle="bold"
+                android:textSize="25dp"/>
 
         </LinearLayout>
 
